@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.krithiha.bfit.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_set_pro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/txt_pro_name"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d9d1d1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img_listview_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_blue"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/linear_settings_profile"
+            android:layout_width="356dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/listview_profile"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d9d1d1"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img_listview_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_blue"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear_settings_edit">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_listview_edit"
+            android:text="Edit Profile"
+            android:padding="25dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d9d1d1"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.02">
+
+        <ImageView
+            android:id="@+id/img_listview_work"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:src="@drawable/workout_blue"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_settings_work">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_listview_work"
+            android:text="Workout Details"
+            android:padding="25dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d9d1d1"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.02">
+
+        <ImageView
+            android:id="@+id/img_listview_cali"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:src="@drawable/cali"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_settings_cali">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_listview_cali"
+                android:text="Calibration"
+                android:padding="25dp"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

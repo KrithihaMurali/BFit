@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/design_alert">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/running"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/image_v_run"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:background="@drawable/v"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.54" />
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5px"
+        android:background="#c6c1c1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/texView"
+            android:text="Start your running or walking while the timer starts. In this you can do both running and walking.\nYou can see the current status above the timer and your burnt calories will be saved.\n"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:id="@+id/txt_guide_close_run"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="#d50b0b"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.krithiha.bfit">
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.mapsexample2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.krithiha.bfit.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.krithiha.bfit.Login"/>
+        <activity android:name="com.krithiha.bfit.Registration"/>
+        <activity android:name="com.krithiha.bfit.MyActivity"/>
+        <activity android:name="com.krithiha.bfit.MainActivity"/>
+        <activity android:name="com.krithiha.bfit.RunOrWalk" />
+        <activity android:name="com.krithiha.bfit.SitUp" />
+        <activity android:name="com.krithiha.bfit.PushUp" />
+        <activity android:name="com.krithiha.bfit.Settings_ListView" />
+        <activity android:name="com.krithiha.bfit.Profile" />
+        <activity android:name="com.krithiha.bfit.EditProfile" />
+        <activity android:name="com.krithiha.bfit.Dairy"/>
+        <activity android:name="com.krithiha.bfit.ActivityGraph"/>
+        <activity android:name="com.krithiha.bfit.WorkoutDetails"/>
+        <activity android:name="com.krithiha.bfit.RunWalkYoutubeLink"/>
+        <activity android:name="com.krithiha.bfit.SitUpYoutubeLink"/>
+        <activity android:name="com.krithiha.bfit.PushUpYoutubeLink"/>
+        <activity android:name="com.krithiha.bfit.NewWorkoutDetails"/>
+        <activity android:screenOrientation="landscape" android:name="com.krithiha.bfit.Calibration"/>
+        <activity android:name="com.krithiha.bfit.ChangePassword"/>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDokg1IZY-LQpWO7QQBsyP2dsOpLofjW1o" />
+       <!-- <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyArqJJkul1XgPsDN6E2102Baocqus4lE3o" />-->
+
+
+    </application>
+</manifest>

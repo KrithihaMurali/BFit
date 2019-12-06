@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/part1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rrgifview"
+            android:layout_width="fill_parent"
+            android:layout_height="138dp"
+            android:layout_margin="2dp"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="IDLE"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <com.krithiha.bfit.GIFView
+                android:id="@+id/gifview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <DigitalClock
+                android:id="@+id/digitalClock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:text="DigitalClock"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Chronometer
+                android:id="@+id/chronometer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Chronometer"
+                android:textSize="55dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#d0cdcd" />
+
+        <LinearLayout
+            android:id="@+id/llmidle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rr1"
+                android:layout_width="370dp"
+                android:layout_height="170dp"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/energy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/energy_value"
+                    android:layout_marginLeft="20dp"
+                    android:text="Energy loss in\n     calories "
+                    android:textColor="#000000"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/energy_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_accc"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginStart="56dp"
+                    android:background="@drawable/graph_blue"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/energy_value"
+                    android:layout_toEndOf="@+id/energy_value" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/part2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/graphrr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:id="@+id/rr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/accxyz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/accval"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:text="Accelerometer\nvalues"
+                android:textColor="#000000"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accval"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/accx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" X "
+                    android:textColor="#000000"
+                    android:textSize="30dip"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/accy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Y "
+                    android:textColor="#000000"
+                    android:textSize="30dip"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/accz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Z "
+                    android:textColor="#000000"
+                    android:textSize="30dip"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_asss"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_alignRight="@+id/accval"
+                android:layout_alignEnd="@+id/accval"
+                android:background="@drawable/run_blue"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
